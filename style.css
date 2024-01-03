@@ -1,0 +1,54 @@
+body {
+    background-image: url(./assets/images/background-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    background-color: hsl(275, 100%, 97%);
+    padding: 5% 30%;
+    font-size: 16px;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.fq {
+    font-weight: bolder;
+    font-size: 3rem;
+    color: hsl(292, 42%, 14%);
+}
+
+.accordion-button {
+    color: hsl(292, 42%, 14%);
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+.accordion-button:hover {
+    color: #AD28EB;
+}
+
+.accordion-button.collapsed::after {
+    background-image: url(./assets/images/icon-plus.svg);
+    display: inline-block;
+}
+
+.accordion-button::after {
+    background-image: url(./assets/images/icon-minus.svg);
+    display: inline-block;
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url(./assets/images/icon-minus.svg);
+  }
+
+/* RESPONSIVE */
+
+@media (max-width:800px) {
+    body {
+        padding: 5% 10%;
+    }
+}
+
+@media (max-width:375px) {
+    body {
+        background-image: url(./assets/images/background-pattern-mobile.svg);
+        background-repeat: no-repeat;
+        padding: 5% 10%;
+    }
+}
